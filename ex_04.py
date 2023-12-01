@@ -51,16 +51,13 @@ class Point:
 class Vector:
     def __init__(self, coordinates: Point):
         self.coordinates = coordinates
+        self.data = [self.coordinates.x, self.coordinates.y]
 
     def __setitem__(self, index, value):
-        pass
-        
-            
-        
-            
+        self.data[index] = value
 
     def __getitem__(self, index):
-        pass
+        return self.data[index]
 
 
 
